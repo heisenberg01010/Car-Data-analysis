@@ -10,6 +10,7 @@ df = pd.read_csv (r'/home/heisenberg/Downloads/CarPrice_Assignment.csv')
 X = df[['enginesize']]
 Y = df['price']
 lm.fit(X, Y)
+print(lm.score(X, Y))
 print(lm.intercept_)
 print(lm.coef_)
 
