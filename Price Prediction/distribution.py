@@ -19,7 +19,7 @@ Yhat = lm.predict(X)
 print(Yhat)
 
 print("Mean Squared Error : "  ,mean_squared_error(Y, Yhat))
-print("R squared error : " ,lm.score(X, Y))
+print("R squared : " ,lm.score(X, Y))
 
 
 ax1 = sns.distplot(df['price'], hist = False, color = "r", label = "Actual value")
